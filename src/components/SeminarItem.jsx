@@ -11,15 +11,15 @@ const SeminarItem = ({ seminar, onDelete, onEdit }) => {
         <h3>{seminar.title}</h3>
         <p>{seminar.description}</p>
         <div className="seminar-details">
-          <span>Sana: {seminar.date}</span>
-          <span>Vaqt: {seminar.time}</span>
+          <span>Дата: {seminar.date}</span>
+          <span>Время: {seminar.time}</span>
         </div>
         <div className="seminar-actions">
           <button onClick={() => onEdit(seminar)} className="edit-btn">
-            Tahrirlash
+            Редактировать
           </button>
           <button onClick={() => onDelete(seminar.id)} className="delete-btn">
-            O'chirish
+            Удалить
           </button>
         </div>
       </div>
